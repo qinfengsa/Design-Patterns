@@ -5,7 +5,7 @@ package com.qinfengsa.pattern.factory.entity;
  */
 public class MacBook implements INoteBook {
 
-
+    @Override
     public void create() {
         System.out.println("苹果MacBook开始生产");
     }

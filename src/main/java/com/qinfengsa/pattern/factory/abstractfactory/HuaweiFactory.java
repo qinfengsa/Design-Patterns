@@ -7,14 +7,15 @@ import com.qinfengsa.pattern.factory.entity.*;
  */
 public class HuaweiFactory implements ElectronicFactory{
 
+    @Override
     public INoteBook createNoteBook() {
         return new MateBook();
     }
-
+    @Override
     public ITelPhone createPhone() {
         return new MatePhone();
     }
-
+    @Override
     public ITablet createTablet() {
         return new HuaweiTablet();
     }

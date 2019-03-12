@@ -7,7 +7,7 @@ import com.qinfengsa.pattern.factory.entity.MateBook;
  * 华为MateBook 工厂
  */
 public class MateBookFactory implements INoteBookFactory {
-
+    @Override
     public INoteBook create() {
         return new MateBook();
     }
