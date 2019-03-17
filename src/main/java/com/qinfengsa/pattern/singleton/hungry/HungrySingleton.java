@@ -1,11 +1,15 @@
 package com.qinfengsa.pattern.singleton.hungry;
 
+import java.io.Serializable;
+
 /**
  * 饿汉式，不管用不用，先实例化出来再说
  * @author: qinfengsa
  * @date: 2019/3/11 00:15
  */
-public class HungrySingleton {
+public class HungrySingleton implements Serializable {
+
+    private String name;
     /**
      * static 关键字 静态变量类加载阶段就会初始化
      * final 保证实例不会在运行过程中被篡改
@@ -27,4 +31,11 @@ public class HungrySingleton {
     }
 
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
